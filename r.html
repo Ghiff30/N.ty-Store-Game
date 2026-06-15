@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Roblox Robux | N.ty</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: linear-gradient(135deg, #18181c, #27272a); color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .card { background: rgba(39, 39, 42, 0.85); backdrop-filter: blur(10px); border: 1px solid rgba(239, 68, 68, 0.2); padding: 40px; border-radius: 20px; width: 100%; max-width: 480px; text-align: center; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); }
+        h1 { font-size: 24px; margin-bottom: 5px; background: linear-gradient(45deg, #ef4444, #f87171); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sub-title { color: #a1a1aa; font-size: 14px; margin-bottom: 15px; }
+        
+        .btn-back-nav { display: inline-block; background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 6px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600; margin-bottom: 25px; border: 1px solid rgba(239, 68, 68, 0.2); transition: 0.3s; }
+        .btn-back-nav:hover { background: #ef4444; color: white; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4); }
+        .btn-back-bottom { margin-top: 15px; margin-bottom: 0; display: inline-block; }
+
+        .form-group { text-align: left; margin-bottom: 20px; }
+        label { display: block; font-size: 14px; color: #e4e4e7; margin-bottom: 8px; font-weight: 600; }
+        input { width: 100%; padding: 12px; background: #18181c; border: 1px solid #52525b; border-radius: 10px; color: white; font-size: 15px; outline: none; }
+        input:focus { border-color: #ef4444; box-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
+        
+        .nominal-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 10px; margin-bottom: 25px; }
+        .nominal-item { background: #18181c; border: 1px solid #52525b; border-radius: 12px; padding: 15px; text-align: center; cursor: pointer; transition: all 0.3s ease; }
+        .nominal-item:hover { border-color: #ef4444; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3); }
+        .item-title { font-size: 15px; font-weight: bold; color: #f8fafc; margin-bottom: 4px; }
+        .item-price { font-size: 13px; color: #ef4444; }
+
+        .nominal-item.active {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.15) !important;
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+            transform: scale(1.03);
+        }
+
+        .total-container { background: rgba(24, 24, 28, 0.6); padding: 12px; border-radius: 10px; border: 1px dashed rgba(239, 68, 68, 0.3); margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; font-size: 15px; }
+        .total-label { color: #cbd5e1; font-weight: 500; }
+        .total-amount { color: #ef4444; font-weight: bold; font-size: 18px; }
+
+        .btn-pay { display: block; width: 100%; padding: 14px; background: linear-gradient(45deg, #ef4444, #f87171); color: white; font-size: 16px; font-weight: bold; border-radius: 12px; text-decoration: none; border: none; cursor: pointer; margin-bottom: 5px; transition: 0.3s; box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3); }
+        .btn-pay:hover { transform: scale(1.02); box-shadow: 0 8px 20px rgba(239, 68, 68, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🧱 Roblox</h1>
+        <p class="sub-title">Isi Data, Pilih Nominal & Metode Pembayaran</p>
+        
+        <a href="N.ty.html" class="btn-back-nav">← Kembali ke Menu Utama</a>
+
+        <div class="form-group">
+            <label>Username Roblox</label>
+            <input type="text" id="game-id" placeholder="Contoh: NettaProPlayer">
+        </div>
+
+        <div class="form-group">
+            <label>Pilih Nominal Robux 🪙</label>
+            <div class="nominal-grid group-diamond">
+                <div class="nominal-item"><div class="item-title">80 Robux</div><div class="item-price">Rp 16.000</div></div>
+                <div class="nominal-item"><div class="item-title">400 Robux</div><div class="item-price">Rp 79.000</div></div>
+                <div class="nominal-item"><div class="item-title">800 Robux</div><div class="item-price">Rp 155.000</div></div>
+                <div class="nominal-item"><div class="item-title">1.700 Robux</div><div class="item-price">Rp 310.000</div></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Pilih Metode Pembayaran 💳</label>
+            <div class="nominal-grid group-payment">
+                <div class="nominal-item"><div class="item-title">📸 QRIS</div><div class="item-price">Otomatis</div></div>
+                <div class="nominal-item"><div class="item-title">🔷 DANA</div><div class="item-price">E-Wallet</div></div>
+                <div class="nominal-item"><div class="item-title">🟢 GoPay</div><div class="item-price">E-Wallet</div></div>
+                <div class="nominal-item"><div class="item-title">🏦 Bank Tf</div><div class="item-price">Transfer</div></div>
+            </div>
+        </div>
+
+        <div class="total-container">
+            <span class="total-label">Total Pembayaran:</span>
+            <span class="total-amount" id="display-total">Rp 0</span>
+        </div>
+
+        <button class="btn-pay" id="btn-pay">💸 Bayar Sekarang</button>
+        
+        <a href="N.ty.html" class="btn-back-nav btn-back-bottom">← Kembali ke Menu Utama</a>
+    </div>
+
+    <script>
+        function setupSelection(groupClass, isDiamondGroup = false) {
+            const items = document.querySelectorAll(`${groupClass} .nominal-item`);
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    items.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    if (isDiamondGroup) {
+                        const priceText = item.querySelector('.item-price').innerText;
+                        document.getElementById('display-total').innerText = priceText;
+                    }
+                });
+            });
+        }
+        setupSelection('.group-diamond', true);
+        setupSelection('.group-payment', false);
+
+        document.getElementById('btn-pay').addEventListener('click', () => {
+            const userId = document.getElementById('game-id').value.trim();
+            const selectedDiamond = document.querySelector('.group-diamond .nominal-item.active');
+            const selectedPayment = document.querySelector('.group-payment .nominal-item.active');
+
+            if (!userId) {
+                alert('Eits! Username Roblox kamu belum diisi nih. Tolong diisi dulu ya! 🚨');
+                return;
+            }
+            if (!selectedDiamond) {
+                alert('Pilih nominal Robux yang kamu inginkan dulu yuk! 🪙');
+                return;
+            }
+            if (!selectedPayment) {
+                alert('Jangan lupa pilih Metode Pembayaran kesukaanmu ya! 💳');
+                return;
+            }
+
+            const diamondName = selectedDiamond.querySelector('.item-title').innerText;
+            const paymentName = selectedPayment.querySelector('.item-title').innerText;
+            alert(`🎉 Berhasil! Pembelian ${diamondName} untuk Username: ${userId} menggunakan ${paymentName} sedang diproses. Selamat bermain!`);
+        });
+    </script>
+
+</body>
+</html>

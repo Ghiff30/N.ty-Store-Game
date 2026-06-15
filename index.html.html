@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.ty | Penyedia Top Up Game Termurah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+
+        /* 👑 NAVBAR MINIMALIS (HANYA LOGO) 👑 */
+        .navbar {
+            display: flex;
+            justify-content: center; /* Mengubah posisi logo jadi di tengah karena menu kanan dihapus */
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #1e293b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: none;
+        }
+
+        .logo .brand-n {
+            color: #000000;
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6); 
+        }
+
+        .logo .brand-ty {
+            color: #38bdf8;
+        }
+
+        /* 🎮 HERO SECTION & GRID GAME */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #1e293b, #0f172a);
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .game-card {
+            background-color: #1e293b;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: white;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(56, 189, 248, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .game-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .game-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* 👣 FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1e293b;
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🌐 NAVBAR UTAMA -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="brand-n">N</span><span class="brand-ty">.ty</span>
+        </div>
+    </nav>
+
+    <!-- 🚀 HERO BANNER -->
+    <header class="hero">
+        <h1>Top Up Game Instan & Terpercaya</h1>
+        <p>Proses otomatis 24 jam non-stop, aman, dan legal 100%</p>
+    </header>
+
+    <!-- 🎯 PILIHAN GAME -->
+    <main class="container">
+        <div class="game-grid">
+            
+            <a href="ml.html" class="game-card">
+                <span class="game-icon">⚔️</span>
+                <h3>Mobile Legends</h3>
+            </a>
+
+            <a href="ff.html" class="game-card">
+                <span class="game-icon">🔥</span>
+                <h3>Free Fire</h3>
+            </a>
+
+            <a href="pubg.html" class="game-card">
+                <span class="game-icon">🪂</span>
+                <h3>PUBG Mobile</h3>
+            </a>
+
+            <a href="r.html" class="game-card">
+                <span class="game-icon">🧱</span>
+                <h3>Roblox</h3>
+            </a>
+
+            <a href="hok.html" class="game-card">
+                <span class="game-icon">👑</span>
+                <h3>Honor of Kings</h3>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- 👣 FOOTER SANG PEMILIK -->
+    <footer>
+        <p>&copy; 2026 N.ty Top Up Store. Created by Netta with Love. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
